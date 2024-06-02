@@ -1,0 +1,92 @@
+<!-- 声明语言 对文档声明不是html标签-->
+<!DOCTYPE html>
+<html lang="zh-CN"> <!--lang 语言声明-->
+
+<head>
+    <meta charset="UTF-8"><!--无它将出现乱码情况-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用vscode开发网页</title>
+</head>
+
+<body>
+    <h1>一级标题</h1><!--一行显示后面加东西不会显示有六级标题-->
+    <p>hello</p><br><!--段落标签加换行break缩写-->
+    <p>我爱<strong>写<del>代码</del>代码</strong><em>like coding</em>写代码</p>
+    <p>hello <ins>world</ins>world!</p>
+    <div><!--division-->我是一个div单独占一行, 超大盒子</div>123
+    <span>我是一个span, 不会单独占一行, 小盒子</span>123<!--span和div是用来布局-->
+    <!--图像标签-->
+    <imge src="logo.png" title="rokeandmord" alt="图片不显示  " />
+    <h4> alt 替换文本 title提示文本 width给图像设置宽度 height 给图像设置高度</h4>
+    <!-- <img src="logo.png" alt="RikeandMord"> -->
+    <table align="center" border="1" clelpadding="1" cellspacing="0" width="500" height="100">
+        <thead>
+
+            <tr>
+                <th>姓名</th>
+                <th>年级</th>
+                <th>学号</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>大一</td>
+                <td>2019001</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>大二</td>
+                <td>2018001</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>大三</td>
+                <td>2017001</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <form action="http://www.baidu.com" method="get">
+        <input type="text" name="username" value="请输入用户名" />
+        <input type="password" name="password" value="请输入密码" />
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置" />
+        <ul>
+            <li>榴莲</li>
+            <li>香蕉</li>
+        </ul>
+        <ol>
+            <li>榴莲</li>
+            <li>香蕉</li>
+        </ol>
+        <dl>
+            <dt>榴莲</dt>
+            <dd>榴莲是一种水果</dd>
+            <dt>香蕉</dt>
+            <dd>香蕉是一种水果</dd>
+        </dl>
+        <br>
+        <form>
+            <label for="text"> 姓名 </label><input type="text" id="text">
+            请输入姓名：<input type="'text" name="uesrname" value="姓名"><br>
+            请输入密码: <input type="password" value="密码"> <br>
+            <!--多选框--> 爱好：吃饭<input type="checkbox"> 睡觉<input type="checkbox"> 打豆豆<input type="checkbox"> <br>
+            <!--单选框--> 性别： 男<input type="radio" checked="checked"> 女<input type="radio"><br>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置"><br>
+            <input type="button" value="按钮"><br>
+            <textarea cols="50" rows="5"><!--cols文字个数 rows几行-->
+
+            </textarea>
+        </form>
+        喜欢的水果：
+        <select>
+            <option>榴莲</option>
+            <option>香蕉</option>
+            <option selected="select">苹果</option> <!--默认选中-->
+        </select>
+
+</body>
+
+</html>
